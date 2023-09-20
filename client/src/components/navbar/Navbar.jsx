@@ -14,7 +14,9 @@ const Navbar = () => {
       <div className="container">
         <div className="left">
 
-          <Link to="/" className="logo link names">Trinity<span>Mixes</span></Link>
+          <Link to="/"><img
+            src="trinity-mixes-logo-zip-file/png/logo-no-background.png"
+            alt="" /></Link>
 
           <div className="navs">
             <Link to="/" className="link names one"><span className="homeLink">Home</span></Link>

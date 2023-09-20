@@ -22,6 +22,8 @@ export const Footer = () => {
                 </p>
 
                 <p class="footer-company-name">Copyright © 2023 <strong>Trinity Mixes</strong> All rights reserved</p>
+                <p class="footer-links"><a href="https://raphaelmbuya.onrender.com" >Developed by: Raphael Mbuya</a></p>
+
             </div>
 
             <div class="footer-center">

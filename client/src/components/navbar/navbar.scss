@@ -23,7 +23,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 85px;
+
+    @include mobile {
+      padding: 0px;
+    }
 
     .left {
       display: flex;
@@ -36,29 +40,8 @@
       }
 
       img {
-        height: 25px;
-        margin-right: 40px;
-
-        @include smallMobile {
-          display: none;
-        }
-      }
-
-      span {
-        margin-right: 20px;
-        cursor: pointer;
-
-        &.mainLink {
-          @include mobile {
-            display: block;
-          }
-        }
-
-        &.homeLink {
-          @include mobile {
-            display: none;
-          }
-        }
+        height: 70px;
+        margin-right: 10px;
       }
 
       .one {
@@ -68,66 +51,14 @@
       }
 
       .navs {
-        margin-top: 15px;
 
         @include smallMobile {
-          display: none;
+          // display: none;
         }
       }
-    }
 
-
-
-    .logo {
-      color: #ffffff;
-      font: normal 36px 'Cookie', cursive;
-      margin: 0;
-
-      @include mobile {
-        font-size: 25px;
-      }
-    }
-
-    .logo span {
-      color: #ff2222;
-    }
-
-    .right {
-      display: flex;
-      align-items: center;
-
-      .icon {
-        margin: 0px 15px;
-        cursor: pointer;
-      }
-
-      img {
-        width: 30px;
-        height: 30px;
-        border-radius: 5px;
-        object-fit: cover;
-        cursor: pointer;
-      }
-
-      .profile {
-        .options {
-          display: none;
-          background-color: var(--main-color);
-          border-radius: 5px;
-        }
-
-        span {
-          padding: 10px;
-          cursor: pointer;
-        }
-
-        &:hover {
-          .options {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-          }
-        }
+      .names {
+        margin: 10px;
       }
     }
   }
